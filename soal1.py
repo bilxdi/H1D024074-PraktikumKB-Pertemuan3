@@ -45,10 +45,6 @@ aturan6 = ctrl.Rule(terjual['Rendah'] & permintaan['Rendah'] & harga['Sedang'] &
 engine = ctrl.ControlSystem([aturan1, aturan2, aturan3, aturan4, aturan5, aturan6])
 system = ctrl.ControlSystemSimulation(engine)
 
-# input
-# suhux = float(input("Masukkan suhu (0-40 C): "))
-# kelembapanx = float(input("Masukkan kelembapan (0-100): "))
-
 # compute
 system.input['terjual'] = 80
 system.input['permintaan'] = 225
